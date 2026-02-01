@@ -1,13 +1,10 @@
-import sys
-from pathlib import Path
 import uuid
 import pytest
 from src.client.favqs_client import FavQsClient
 from src.data.user_payloads import create_user_payload, update_user_payload
 from src.utils.statuses import HTTP_OK
 
-ROOT_DIR = Path(__file__).resolve().parent.parent
-sys.path.append(str(ROOT_DIR))
+
 
 
 @pytest.fixture(scope="session")
