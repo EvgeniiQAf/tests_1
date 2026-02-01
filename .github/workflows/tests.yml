@@ -25,5 +25,6 @@ jobs:
       - name: Run tests
         env:
           FAVQS_API_KEY: ${{ secrets.FAVQS_API_KEY }}
+          PYTHONPATH: .
         run: |
           pytest -v
